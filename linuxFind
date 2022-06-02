@@ -1,3 +1,8 @@
+''' Consider file and directory structure as n-ary tree.
+Your root path is the starting node. All the files in system are leaf nodes and all the directories are n-ary sub trees.
+Perform DFS/BFS starting from root and visit all files.
+If a file satisfies "find" requirement then add it to result '''
+
 class Filter:  # abstract class
   def apply(self, file):
     if not isinstance(file, File):  # file validation
